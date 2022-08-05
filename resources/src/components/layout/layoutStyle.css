@@ -1,0 +1,40 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    position: sticky;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    clear: both;
+    color: white;
+}
+
+a:link {
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: underline;
+}

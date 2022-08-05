@@ -1,0 +1,11 @@
+.evento {
+    width: auto;
+    min-width: 300px;
+    background-color: gainsboro;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+
+}
