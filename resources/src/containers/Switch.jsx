@@ -12,8 +12,8 @@ export const Switch = () => {
             <Header />
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="/listaEventi" element={<ListaEventi />} />
-                <Route exact path="/prenota" element={<Prenota />} />
+                <Route exact path="/listaEventi" element={<ListaEventi />} /> {/*messo token */}
+                <Route exact path="/prenota" element={<Prenota />} /> {/*messo token */}
             </Routes>
             <Footer />
         </>

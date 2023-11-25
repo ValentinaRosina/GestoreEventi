@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import './pagineStyle.css';
 import axios from "axios";
-
+import useToken from '../tools/useToken';
+import { Login } from './Login';
 export const Prenota = () => {
 
 
     const [nome, setNome] = useState("");
     const [posti, setPosti] = useState("");
+    const { token, setToken } = useToken();
 
+    if (!token) {
+        return <Login setToken={setToken} />
+    }
     function updateEvent() {
         var config = {
             headers: {
